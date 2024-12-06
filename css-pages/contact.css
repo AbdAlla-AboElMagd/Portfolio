@@ -1,0 +1,103 @@
+/********************************* Start Documentation ****************************************
+* @File      : contact.css
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This Page shows Image Gallery as What I can Do
+*********************************** End Documentation ****************************************/
+@import url("https://fonts.cdnfonts.com/css/lucida-unicode-calligraphy");
+
+body {
+  font-family: "Lucida Unicode Calligraphy", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  text-align: center;
+}
+.cform {
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px rgba(186, 186, 186, 0.51);
+}
+.inputcontainer {
+  margin: 10px;
+}
+.textInput {
+  width: 80%;
+  line-height: 25px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  margin: 10px;
+}
+.textAreaInput {
+  width: 80%;
+  line-height: 20px;
+  border-radius: 7px;
+  font-size: 12px;
+  margin: 10px;
+  height: 50px;
+}
+.buttonStyle {
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #0c0f0a;
+  color: #e8e8e8;
+}
+.buttonStyle:hover {
+  background-color: #800020;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+}
+
+input:invalid {
+  border-bottom: 1px solid red;
+}
+
+.validationmessage::after {
+  content: "Not Valid !";
+  display: none;
+  color: red;
+}
+
+input:invalid + .validationmessage::after {
+  display: block;
+}
+
+input:valid + .validationmessage::after {
+  display: none;
+}
+
+.gotop {
+  margin: 10px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.drowCircle {
+  width: 70px;
+  height: 70px;
+  background-color: #800020;
+  border-radius: 50%;
+}
+.drowTop {
+  width: 10px;
+  height: 10px;
+  border-top: 5px solid #e8e8e8;
+  border-left: 5px solid #e8e8e8;
+  rotate: 45deg;
+  margin: auto;
+  position: absolute;
+  bottom: 25px;
+  right: 27px;
+}
+
+/*********************************Start Log*******************************************************************
+    User               Date                Brief
+**************************************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Page Design for the contactus.html with its main content
+***************************************************************************************************************/

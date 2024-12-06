@@ -1,0 +1,77 @@
+/********************************* Start Documentation ****************************************
+* @File      : about.css
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This Page shows Image Gallery as What I can Do
+*********************************** End Documentation ****************************************/
+
+@import url("https://fonts.cdnfonts.com/css/lucida-unicode-calligraphy");
+
+body {
+  font-family: "Lucida Unicode Calligraphy", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  margin: 50px;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+.header .pi {
+  width: 120px;
+  height: 180px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header .pt {
+  display: inline-block;
+  width: 80%;
+  min-width: 250px;
+  text-align: left;
+}
+.header p {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: left;
+}
+
+.header p .job {
+  color: rgba(80, 77, 77, 0.81);
+}
+
+.content div img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.content div p {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.content div {
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 75%;
+  width: 200px;
+}
+.logo img {
+  width: 200px;
+}
+
+/*********************************Start Log*******************************************************************
+    User               Date                Brief
+**************************************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Page Design for the about.html with its main content
+***************************************************************************************************************/

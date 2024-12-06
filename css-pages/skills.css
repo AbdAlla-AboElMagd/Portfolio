@@ -1,0 +1,227 @@
+/********************************* Start Documentation ****************************************
+* @File      : skils.css
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This Page Contains the Design For the skill.html Page
+*********************************** End Documentation ****************************************/
+@import url("https://fonts.cdnfonts.com/css/lucida-unicode-calligraphy");
+
+body {
+  font-family: "Lucida Unicode Calligraphy", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.techskills {
+  width: 45%;
+  color: black;
+  background-color: #e8e8e8;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px rgba(186, 186, 186, 0.51);
+}
+.softskills {
+  width: 45%;
+  display: inline-block;
+  align-items: center;
+  background-color: #e8e8e8;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px rgba(186, 186, 186, 0.51);
+  min-width: 350px;
+}
+.sscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sskill {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  min-width: 130px;
+}
+
+/* My Idea about Progress Bar 
+  Is Drawing One Div inside another Div
+  Each one of them represent a rectangle
+  The Outside Div Width Represent the width of whole progress bar
+  The Inside Div Width Represent The Progress 
+*/
+.progreesbar {
+  background-color: lightgray;
+  width: 90%;
+  height: 20px;
+}
+
+.progress {
+  background-color: #800020;
+  text-align: center;
+  height: 100%;
+  color: #e8e8e8;
+}
+
+#htmlp {
+  width: 90%;
+}
+
+#cssp {
+  width: 85%;
+}
+
+#sqlp {
+  width: 92%;
+}
+
+#pythonp {
+  width: 80%;
+}
+
+#jsp {
+  width: 75%;
+}
+
+#javap {
+  width: 73%;
+}
+
+.skill h3 {
+  margin: 0px;
+}
+
+.skill {
+  margin: 10px;
+}
+
+/* My Idea About Making the Circle Shows the Progress
+  (First any Skill Will be added It will be above 50%
+  so first draw a 50% progress which is half a circle) 
+  Is that Making 3 divs one Contains two silbling divs
+  The Outer Div will be a circle 
+  the Other inner Divs will be half a circle
+  then make the position absolute of the two half circle
+  to Draw them on each other 
+  (Note to make them starts From 
+  the position of the outer circle 
+  not from the body make the outer circle position relative )
+  Now Rotate one half according to its center point 
+  First transform the origin to the bottom (Which is the center)
+  Then Rotate
+  As I said before the percentage is above 50%
+  so Rotate from 0 deg which is equal to 50%
+  TO 180 Deg which is equal to 100%
+  Which for every 1% above 50% equals to 3.6 deg
+  So 
+  {The Final Rotation Deg = (Total Percentage - 50) * 3.6 }
+  */
+
+.circle {
+  background-color: lightgrey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.incircle {
+  /*background-color: rgb(119, 255, 0);*/
+  background-color: #800020;
+  width: 100px;
+  height: 50px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: absolute;
+}
+.progresscircle {
+  /*background-color: rgb(119, 255, 0);*/
+  background-color: #800020;
+  width: 100px;
+  height: 50px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: absolute;
+  transform-origin: bottom;
+  /* transform: rotate(120deg); */ /* Replaced in .p100 .p95 ... for each progress*/
+}
+
+/* To Make The Progress in the top not in the right */
+.pcontainer {
+  position: relative;
+  width: 100%;
+  transform: rotate(90deg);
+}
+
+/* To Write Progress Percentage in the circle */
+.tc {
+  position: absolute;
+  z-index: 1;
+  color: #e8e8e8;
+  font-weight: bold;
+  font-size: 18px;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: #0c0f0a;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Classes Progress Rate 
+  {The Final Rotation Deg = (Total Percentage - 50) * 3.6 }
+*/
+
+.p100 {
+  transform: rotate(180deg);
+}
+
+.p95 {
+  transform: rotate(162deg);
+}
+
+.p90 {
+  transform: rotate(144deg);
+}
+
+.p85 {
+  transform: rotate(126deg);
+}
+
+.p80 {
+  transform: rotate(108deg);
+}
+
+.p75 {
+  transform: rotate(90deg);
+}
+
+.p70 {
+  transform: rotate(72deg);
+}
+
+/*********************************Start Log*******************************************************************
+    User               Date                Brief
+**************************************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Page Design for the skills.html which shows the Progress of Each skill 
+                                          with its main content
+***************************************************************************************************************/

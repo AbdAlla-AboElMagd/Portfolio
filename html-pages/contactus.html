@@ -1,0 +1,144 @@
+<!-- /********************************* Start Documentation ****************************************
+* @File      : contactus.html
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This page contain The Form to send message about any topic to me with my main contact info
+*********************************** End Documentation ****************************************/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="icon"
+      href="../images/Abd-Alla-Abo-ElMagd-logo-white-black-bg.jpeg"
+      type="image/jpeg"
+    />
+    <link rel="stylesheet" href="../css-pages/contact.css" />
+  </head>
+  <body>
+    <div id="top"></div>
+    <form action="thankyou.html" method="get">
+      <div class="cform">
+        <fieldset>
+          <legend>Contact Me</legend>
+          <div class="inputcontainer">
+            <label for="name" class="required">Your Name:</label>
+            <input
+              type="text"
+              class="textInput"
+              id="name"
+              tabindex="1"
+              accesskey="n"
+              placeholder="Your Name"
+              required="required"
+            />
+            <span class="validationmessage"></span>
+          </div>
+
+          <div class="inputcontainer">
+            <p>Your Openion:</p>
+            <input type="radio" id="vg" name="Openion" value="vg" />
+            <label for="vg">Very Good</label>
+            <input type="radio" id="g" name="Openion" value="g" />
+            <label for="g">Good</label>
+            <input type="radio" id="fa" name="Openion" value="fa" />
+            <label for="fa">Fair</label>
+          </div>
+
+          <div class="inputcontainer">
+            <label for="mail">Your Mail:</label>
+            <input
+              type="email"
+              class="textInput"
+              id="mail"
+              tapindex="2"
+              accesskey="a"
+              placeholder="Your Mail"
+            />
+            <span class="validationmessage"></span>
+          </div>
+
+          <div class="inputcontainer">
+            <label for="sub">Subject:</label>
+            <input
+              type="text"
+              class="textInput"
+              id="sub"
+              tabindex="3"
+              accesskey="s"
+              placeholder="Subject"
+            />
+          </div>
+
+          <div class="inputcontainer">
+            <label for="msg">Message:</label>
+            <textarea
+              name="message"
+              class="textAreaInput"
+              id="msg"
+              tabindex="4"
+              accesskey="m"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <input type="reset" class="buttonStyle" />
+          <input type="submit" class="buttonStyle" />
+        </fieldset>
+      </div>
+    </form>
+
+    <div style="text-align: center">
+      <img
+        src="../images/social-media-logos-500-250.png"
+        rel="Social Linked"
+        usemap="#map1"
+        width="500px"
+        height="250px"
+      />
+
+      <map name="map1">
+        <area
+          target="_blank"
+          alt="Facebook"
+          title="Facebook"
+          href="https://www.facebook.com/abdalla.mohamed.12935"
+          coords="67,113,56"
+          shape="circle"
+        />
+        <area
+          target="_blank"
+          alt="Linkedin"
+          title="Linkedin"
+          href="https://www.linkedin.com/in/abdalla-m-abo-elmagd-a3450a311"
+          coords="183,58,295,168"
+          shape="rect"
+        />
+        <area
+          target="_blank"
+          alt="Github"
+          title="Github"
+          href="https://github.com/AbdAlla-AboElMagd"
+          coords="415,114,58"
+          shape="circle"
+        />
+      </map>
+    </div>
+
+    <div class="gotop">
+      <a href="#top"
+        ><div class="drowCircle">
+          <div class="drowTop"></div></div
+      ></a>
+    </div>
+  </body>
+</html>
+
+<!-- 
+/*********************************Start Log***************************************************
+    User               Date                Brief
+**********************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Contactus Page with its Main HTML Content
+***********************************************************************************************/
+-->

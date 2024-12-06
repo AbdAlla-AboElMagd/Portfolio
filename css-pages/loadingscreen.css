@@ -1,0 +1,34 @@
+/********************************* Start Documentation ****************************************
+* @File      : loadingscreen.css
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This Page Contains the Design For the Loading screen Page (loadingscreen.html) which shows before whatido.html
+*********************************** End Documentation ****************************************/
+@import url("https://fonts.cdnfonts.com/css/lucida-unicode-calligraphy");
+
+body {
+  font-family: "Lucida Unicode Calligraphy", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  background-image: url(../images/Abd-Alla-Abo-ElMagd-logo-white-black-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  color: #c0c0c0;
+  background-color: black;
+  text-align: center;
+}
+
+img {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*********************************Start Log*******************************************************************
+    User               Date                Brief
+**************************************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Page Design for the loadingscreen.html which shows befor whatido.html page
+                                          with its main content
+***************************************************************************************************************/

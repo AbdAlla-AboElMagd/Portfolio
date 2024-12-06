@@ -1,0 +1,136 @@
+/********************************* Start Documentation ****************************************
+* @File      : home.css
+* @Author    : AbdAlla AboElMagd
+* @Brief     : This Page Contains the Design For the main Page of the index.html page
+*********************************** End Documentation ****************************************/
+@import url("https://fonts.cdnfonts.com/css/lucida-unicode-calligraphy");
+
+body {
+  font-family: "Lucida Unicode Calligraphy", "Lucida Sans",
+    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #0c0f0a;
+  min-width: 885px;
+}
+.headbar {
+  background-color: #0c0f0a;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  color: #e8e8e8;
+  /* border-bottom: 1px solid #ffd700; */
+}
+.headbar h1 {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #800020;
+  width: 100%;
+  color: #e8e8e8;
+  font-size: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  /* border-bottom: 1px solid #ffd700; */
+}
+.navbar ul {
+  margin: 0;
+}
+
+.navCell {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.navCell a {
+  text-decoration: none;
+  display: inline-block;
+  color: #e8e8e8;
+  padding: 10px;
+}
+.navCell a:hover {
+  background-color: #0c0f0a;
+}
+
+.content {
+  background-color: #0c0f0a;
+  display: flex;
+  /* position: relative; */
+  width: 100%;
+  height: 80vh;
+  border-radius: 20px;
+}
+
+.leftbar {
+  background-color: #0c0f0a;
+  float: left;
+  width: 15%;
+  min-width: 100px;
+  text-align: center;
+  color: #e8e8e8;
+  /* border-right: 1px solid #ffd700; */
+}
+
+.maincontent {
+  float: left;
+  width: 70%;
+  min-width: 675px;
+  background-color: #0c0f0a;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0c0f0a;
+  border-radius: 30px;
+  background-color: #e8e8e8;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px #0c0f0a;
+}
+
+.rightbar {
+  background-color: #0c0f0a;
+  float: right;
+  width: 15%;
+  min-width: 100px;
+  text-align: center;
+  color: #e8e8e8;
+  /* border-left: 1px solid #ffd700; */
+}
+
+.maxim {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.footer {
+  /* border-top: 1px solid #ffd700;*/
+  background-color: #2d2d2d74;
+  text-align: center;
+  height: 6vh;
+  color: #e8e8e8;
+}
+.footertext {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/*********************************Start Log*******************************************************************
+    User               Date                Brief
+**************************************************************************************************************
+Abd-Alla AboElMagd    06Dec2024           Finishing the Page Design for the index.html with its main content
+***************************************************************************************************************/
